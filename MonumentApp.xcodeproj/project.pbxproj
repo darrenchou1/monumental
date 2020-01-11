@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1A9A9F925F0CC33D2DE8DE /* libPods-MonumentApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042F23E3C1EAD68C7CD4CAC8 /* libPods-MonumentApp.a */; };
 		EB72566823C98F9400017C31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72566723C98F9400017C31 /* AppDelegate.swift */; };
 		EB72566A23C98F9400017C31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72566923C98F9400017C31 /* SceneDelegate.swift */; };
 		EB72566C23C98F9400017C31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB72566B23C98F9400017C31 /* ViewController.swift */; };
 		EB72566F23C98F9400017C31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB72566D23C98F9400017C31 /* Main.storyboard */; };
 		EB72567123C98F9800017C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB72567023C98F9800017C31 /* Assets.xcassets */; };
 		EB72567423C98F9800017C31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB72567223C98F9800017C31 /* LaunchScreen.storyboard */; };
+		EB72567C23C993C700017C31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB72567B23C993C700017C31 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042F23E3C1EAD68C7CD4CAC8 /* libPods-MonumentApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MonumentApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		263631E062A7C9A203C4225E /* Pods-MonumentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonumentApp.release.xcconfig"; path = "Target Support Files/Pods-MonumentApp/Pods-MonumentApp.release.xcconfig"; sourceTree = "<group>"; };
 		EB72566423C98F9400017C31 /* MonumentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonumentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB72566723C98F9400017C31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB72566923C98F9400017C31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		EB72567023C98F9800017C31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB72567323C98F9800017C31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB72567523C98F9800017C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB72567B23C993C700017C31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7CC12B813DD0B278F3FF1BA /* Pods-MonumentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonumentApp.debug.xcconfig"; path = "Target Support Files/Pods-MonumentApp/Pods-MonumentApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1A9A9F925F0CC33D2DE8DE /* libPods-MonumentApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85FBB1153A3D648B0A9829E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7CC12B813DD0B278F3FF1BA /* Pods-MonumentApp.debug.xcconfig */,
+				263631E062A7C9A203C4225E /* Pods-MonumentApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E05D613CB270B13D01D28D30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				042F23E3C1EAD68C7CD4CAC8 /* libPods-MonumentApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB72565B23C98F9400017C31 = {
 			isa = PBXGroup;
 			children = (
 				EB72566623C98F9400017C31 /* MonumentApp */,
 				EB72566523C98F9400017C31 /* Products */,
+				85FBB1153A3D648B0A9829E1 /* Pods */,
+				E05D613CB270B13D01D28D30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 				EB72567023C98F9800017C31 /* Assets.xcassets */,
 				EB72567223C98F9800017C31 /* LaunchScreen.storyboard */,
 				EB72567523C98F9800017C31 /* Info.plist */,
+				EB72567B23C993C700017C31 /* GoogleService-Info.plist */,
 			);
 			path = MonumentApp;
 			sourceTree = "<group>";
@@ -74,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB72567823C98F9800017C31 /* Build configuration list for PBXNativeTarget "MonumentApp" */;
 			buildPhases = (
+				A282BFB90CF8D372D07DC4F4 /* [CP] Check Pods Manifest.lock */,
 				EB72566023C98F9400017C31 /* Sources */,
 				EB72566123C98F9400017C31 /* Frameworks */,
 				EB72566223C98F9400017C31 /* Resources */,
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB72567C23C993C700017C31 /* GoogleService-Info.plist in Resources */,
 				EB72567423C98F9800017C31 /* LaunchScreen.storyboard in Resources */,
 				EB72567123C98F9800017C31 /* Assets.xcassets in Resources */,
 				EB72566F23C98F9400017C31 /* Main.storyboard in Resources */,
@@ -132,6 +162,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A282BFB90CF8D372D07DC4F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonumentApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB72566023C98F9400017C31 /* Sources */ = {
@@ -282,6 +337,7 @@
 		};
 		EB72567923C98F9800017C31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CC12B813DD0B278F3FF1BA /* Pods-MonumentApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +355,7 @@
 		};
 		EB72567A23C98F9800017C31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263631E062A7C9A203C4225E /* Pods-MonumentApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
