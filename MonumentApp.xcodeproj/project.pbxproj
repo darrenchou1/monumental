@@ -50,7 +50,6 @@
 				F7CC12B813DD0B278F3FF1BA /* Pods-MonumentApp.debug.xcconfig */,
 				263631E062A7C9A203C4225E /* Pods-MonumentApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
